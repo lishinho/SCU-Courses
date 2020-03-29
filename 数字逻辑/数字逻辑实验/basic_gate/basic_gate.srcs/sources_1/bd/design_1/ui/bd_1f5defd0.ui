@@ -1,0 +1,24 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.4-r1  2014-02-28 bk=1.3047 VDI=34 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port and_o -pg 1 -y 130 -defaultsOSRD
+preplace port b1 -pg 1 -y 50 -defaultsOSRD
+preplace port GND -pg 1 -y 80 -defaultsOSRD
+preplace port or_o -pg 1 -y 420 -defaultsOSRD
+preplace port a1 -pg 1 -y 20 -defaultsOSRD
+preplace port nand_o -pg 1 -y 90 -defaultsOSRD
+preplace port nor_o -pg 1 -y 380 -defaultsOSRD
+preplace inst four_2_input_or_gate_0 -pg 1 -lvl 2 -y 450 -defaultsOSRD
+preplace inst four_2_input_nand_gate_0 -pg 1 -lvl 1 -y 130 -defaultsOSRD
+preplace inst four_2_input_nor_gate_0 -pg 1 -lvl 1 -y 410 -defaultsOSRD
+preplace inst four_2_input_and_gate_0 -pg 1 -lvl 2 -y 160 -defaultsOSRD
+preplace netloc four_2_input_or_gate_0_Y1 1 2 1 N
+preplace netloc four_2_input_nor_gate_0_y1 1 1 2 NJ 330 540
+preplace netloc GND_1 1 0 1 80
+preplace netloc b1_1 1 0 1 90
+preplace netloc four_2_input_and_gate_0_y1 1 2 1 N
+preplace netloc four_2_input_nand_gate_0_y1 1 1 2 NJ 40 540
+preplace netloc a1_1 1 0 1 100
+levelinfo -pg 1 60 200 440 560
+",
+}

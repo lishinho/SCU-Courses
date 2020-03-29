@@ -1,0 +1,6 @@
+set_property DONT_TOUCH true [get_cells design_1_i/four_2_input_and_gate_0]
+set_property DONT_TOUCH true [get_cells design_1_i/four_2_input_nand_gate_0]
+set_property DONT_TOUCH true [get_cells design_1_i/four_2_input_nor_gate_0]
+set_property DONT_TOUCH true [get_cells design_1_i/four_2_input_or_gate_0]
+set_property DONT_TOUCH true [get_cells design_1_i]
+set_property IOSTANDARD LVCMOS18 [get_ports a1]

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun 01 17:30:53 2016" VIVADOVERSION="2014.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="design_1_imp" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="set" SIGIS="data" SIGNAME="External_Ports_set">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="d_flipflop_set_reset_0" PORT="pr1_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_100Mhz" SIGIS="clk" SIGNAME="External_Ports_clk_100Mhz">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_div_0" PORT="clk_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset" SIGIS="data" SIGNAME="External_Ports_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="d_flipflop_set_reset_0" PORT="clr1_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="D1" SIGIS="data" SIGNAME="External_Ports_D1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="d_flipflop_set_reset_0" PORT="D1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="GND" SIGIS="data" SIGNAME="External_Ports_GND">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="d_flipflop_set_reset_0" PORT="clk2"/>
+        <CONNECTION INSTANCE="d_flipflop_set_reset_0" PORT="pr2_n"/>
+        <CONNECTION INSTANCE="d_flipflop_set_reset_0" PORT="clr2_n"/>
+        <CONNECTION INSTANCE="d_flipflop_set_reset_0" PORT="D2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="q1" SIGIS="data" SIGNAME="d_flipflop_set_reset_0_q1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="d_flipflop_set_reset_0" PORT="q1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="q1_n" SIGIS="data" SIGNAME="d_flipflop_set_reset_0_q1_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="d_flipflop_set_reset_0" PORT="q1_n"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <MODULES>
+    <MODULE FULLNAME="/clk_div_0" HWVERSION="1.0" INSTANCE="clk_div_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_div" VLNV="xilinx.com:xup:clk_div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="100000000"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clk_div_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_clk_100Mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100Mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="d_flipflop_set_reset_0" PORT="clk1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/d_flipflop_set_reset_0" HWVERSION="1.0" INSTANCE="d_flipflop_set_reset_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="d_flipflop_set_reset" VLNV="xilinx.com:XUP:d_flipflop_set_reset:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DELAY" VALUE="10"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_d_flipflop_set_reset_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk1" SIGIS="undef" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_div_0" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="pr1_n" SIGIS="undef" SIGNAME="External_Ports_set">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="set"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr1_n" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D1" SIGIS="undef" SIGNAME="External_Ports_D1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="D1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk2" SIGIS="undef" SIGNAME="External_Ports_GND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="pr2_n" SIGIS="undef" SIGNAME="External_Ports_GND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr2_n" SIGIS="undef" SIGNAME="External_Ports_GND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D2" SIGIS="undef" SIGNAME="External_Ports_GND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="q1" SIGIS="undef" SIGNAME="d_flipflop_set_reset_0_q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="q1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="q1_n" SIGIS="undef" SIGNAME="d_flipflop_set_reset_0_q1_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="q1_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="q2" SIGIS="undef"/>
+        <PORT DIR="O" NAME="q2_n" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+  <REPOSITORIES/>
+
+</EDKSYSTEM>

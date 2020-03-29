@@ -1,0 +1,32 @@
+{
+   commentid: "",
+   guistr: "# # String gsaved with Nlview version 6.4-r1  2014-02-28 bk=1.3047 VDI=34 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port SW3 -pg 1 -y 30 -defaultsOSRD
+preplace port Judgement -pg 1 -y 620 -defaultsOSRD
+preplace port GND -pg 1 -y 450 -defaultsOSRD
+preplace port SW0 -pg 1 -y 350 -defaultsOSRD
+preplace port SW1 -pg 1 -y 130 -defaultsOSRD
+preplace port SW2 -pg 1 -y 240 -defaultsOSRD
+preplace inst four_2_input_nand_gate_0 -pg 1 -lvl 1 -y 110 -defaultsOSRD
+preplace inst four_2_input_nand_gate_1 -pg 1 -lvl 1 -y 330 -defaultsOSRD
+preplace inst four_2_input_nand_gate_2 -pg 1 -lvl 1 -y 1230 -defaultsOSRD
+preplace inst four_2_input_nand_gate_3 -pg 1 -lvl 1 -y 1010 -defaultsOSRD
+preplace inst four_2_input_nand_gate_4 -pg 1 -lvl 1 -y 790 -defaultsOSRD
+preplace inst four_2_input_nand_gate_5 -pg 1 -lvl 1 -y 570 -defaultsOSRD
+preplace inst four_2_input_nand_gate_6 -pg 1 -lvl 2 -y 650 -defaultsOSRD
+preplace netloc four_2_input_nand_gate_3_y1 1 1 1 350
+preplace netloc four_2_input_nand_gate_1_y1 1 1 1 350
+preplace netloc GND_1 1 0 2 100 450 330
+preplace netloc SW2_1 1 0 1 90
+preplace netloc four_2_input_nand_gate_4_y1 1 1 1 340
+preplace netloc SW1_1 1 0 1 120
+preplace netloc four_2_input_nand_gate_0_y1 1 1 1 360
+preplace netloc SW0_1 1 0 1 80
+preplace netloc SW3_1 1 0 1 110
+preplace netloc four_2_input_nand_gate_6_y1 1 2 1 N
+preplace netloc four_2_input_nand_gate_2_y1 1 1 1 360
+preplace netloc four_2_input_nand_gate_5_y1 1 1 1 320
+levelinfo -pg 1 60 220 510 630
+",
+}

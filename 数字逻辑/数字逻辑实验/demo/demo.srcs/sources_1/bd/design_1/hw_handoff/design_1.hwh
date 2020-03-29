@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun 01 16:29:12 2016" VIVADOVERSION="2014.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a50t" NAME="design_1_imp" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="a1_in" SIGIS="data" SIGNAME="External_Ports_a1_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="two_4_input_and_gate_0" PORT="a1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="b1_in" SIGIS="data" SIGNAME="External_Ports_b1_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="two_4_input_and_gate_0" PORT="b1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="vcc" SIGIS="data" SIGNAME="External_Ports_vcc">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="two_4_input_and_gate_0" PORT="c1"/>
+        <CONNECTION INSTANCE="two_4_input_and_gate_0" PORT="d1"/>
+        <CONNECTION INSTANCE="two_4_input_and_gate_0" PORT="a2"/>
+        <CONNECTION INSTANCE="two_4_input_and_gate_0" PORT="b2"/>
+        <CONNECTION INSTANCE="two_4_input_and_gate_0" PORT="c2"/>
+        <CONNECTION INSTANCE="two_4_input_and_gate_0" PORT="d2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="y1" SIGIS="data" SIGNAME="two_4_input_and_gate_0_y1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="two_4_input_and_gate_0" PORT="y1"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <MODULES>
+    <MODULE FULLNAME="/two_4_input_and_gate_0" HWVERSION="1.0" INSTANCE="two_4_input_and_gate_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="two_4_input_and_gate" VLNV="xilinx.com:XUP:two_4_input_and_gate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DELAY" VALUE="10"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_two_4_input_and_gate_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a1" SIGIS="undef" SIGNAME="External_Ports_a1_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a1_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b1" SIGIS="undef" SIGNAME="External_Ports_b1_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b1_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c1" SIGIS="undef" SIGNAME="External_Ports_vcc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vcc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="d1" SIGIS="undef" SIGNAME="External_Ports_vcc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vcc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="a2" SIGIS="undef" SIGNAME="External_Ports_vcc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vcc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b2" SIGIS="undef" SIGNAME="External_Ports_vcc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vcc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c2" SIGIS="undef" SIGNAME="External_Ports_vcc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vcc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="d2" SIGIS="undef" SIGNAME="External_Ports_vcc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vcc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y1" SIGIS="undef" SIGNAME="two_4_input_and_gate_0_y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y2" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+  <REPOSITORIES/>
+
+</EDKSYSTEM>

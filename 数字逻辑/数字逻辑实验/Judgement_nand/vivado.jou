@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Wed Jun 01 18:17:19 2016
+# Process ID: 2416
+# Log file: F:/Digital Logic/Judgement_nand/vivado.log
+# Journal file: F:/Digital Logic/Judgement_nand\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:\Digital Logic\Judgement_nand\Judgement_nand.xpr}
+open_bd_design {F:/Digital Logic/Judgement_nand/Judgement_nand.srcs/sources_1/bd/design_1/design_1.bd}

@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Wed Jun 01 18:17:19 2016
+# Process ID: 2416
+# Log file: F:/Digital Logic/Judgement_nand/vivado.log
+# Journal file: F:/Digital Logic/Judgement_nand\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:\Digital Logic\Judgement_nand\Judgement_nand.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/SYS/Desktop/Judgement_nand' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Digital Logic/Judgement_nand/74LSXX_LIB'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.2/data/ip'.
+open_bd_design {F:/Digital Logic/Judgement_nand/Judgement_nand.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:XUP:four_2_input_nand_gate:1.0 - four_2_input_nand_gate_0
+Adding component instance block -- xilinx.com:XUP:four_2_input_nand_gate:1.0 - four_2_input_nand_gate_1
+Adding component instance block -- xilinx.com:XUP:four_2_input_nand_gate:1.0 - four_2_input_nand_gate_2
+Adding component instance block -- xilinx.com:XUP:four_2_input_nand_gate:1.0 - four_2_input_nand_gate_3
+Adding component instance block -- xilinx.com:XUP:four_2_input_nand_gate:1.0 - four_2_input_nand_gate_4
+Adding component instance block -- xilinx.com:XUP:four_2_input_nand_gate:1.0 - four_2_input_nand_gate_5
+Adding component instance block -- xilinx.com:XUP:four_2_input_nand_gate:1.0 - four_2_input_nand_gate_6
+Successfully read diagram <design_1> from BD file <F:/Digital Logic/Judgement_nand/Judgement_nand.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 710.414 ; gain = 122.824
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 01 18:17:49 2016...
